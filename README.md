@@ -1,12 +1,9 @@
 <h1> Projet : Un calendrier très très PÔÔ <h1/>
-
 <h2>2.2. On s'échauffe avec la classe User<h2/>
-<p>
-On doit créer une classe User (thanks captain obvious !).
+<p>On doit créer une classe User (thanks captain obvious !).
 Un User a 2 variables d'instance, un @email (string) et un @age (Integer), que l'on peut lire et modifier à sa guise (indice : attr_accessor).
 Dès la création d'un User, on veut définir son e-mail et son âge. En d'autres terme, on veut pouvoir faire julie = User.new("julie@email.com", 32)
-Il est possible de récupérer un array contenant tous les utilisateurs déjà créés. Cela doit se faire via une méthode de classe de la façon suivante : User.all. 
-<p/>
+Il est possible de récupérer un array contenant tous les utilisateurs déjà créés. Cela doit se faire via une méthode de classe de la façon suivante : User.all.<p/>
 <h2>2.3. Les événements<h2/>
 
 <h3>2.3.1. Les attributs de l'événement<h3/>
