@@ -1,27 +1,27 @@
-<h1> Projet : Un calendrier très très PÔÔ <h1/>
+<title> Projet : Un calendrier très très PÔÔ <title/>
 
-2.2. On s'échauffe avec la classe User
-
+<h2>2.2. On s'échauffe avec la classe User<h2/>
+<p>
 On doit créer une classe User (thanks captain obvious !).
 Un User a 2 variables d'instance, un @email (string) et un @age (Integer), que l'on peut lire et modifier à sa guise (indice : attr_accessor).
 Dès la création d'un User, on veut définir son e-mail et son âge. En d'autres terme, on veut pouvoir faire julie = User.new("julie@email.com", 32)
 Il est possible de récupérer un array contenant tous les utilisateurs déjà créés. Cela doit se faire via une méthode de classe de la façon suivante : User.all. 
+<p/>
+<h2>2.3. Les événements<h2/>
 
-2.3. Les événements
-
-2.3.1. Les attributs de l'événement
-
+<h3>2.3.1. Les attributs de l'événement<h3/>
+<p>
 Voici les attributs (ou variable d'instance) que l'on voudra rajouter à notre événement :
-
+<br>
     Un événement a une @start_date qui est de type Time (on y reviendra)
     Un événement a une @duration, qui est un integer qui représente le nombre de minutes
     Un événement a un @title, qui est un string
     Un événement a un ou plusieurs @attendees, qui est un array qui contient une liste d’e-mails
-
+<br>
 L'objectif de tout ça est de pouvoir rapidement (une ligne de code) créer un événement avec truc@machin.com et bidule@chose.fr en tant qu'invités :
 
 Event.new("2019-01-13 09:00", 10, "standup quotidien", ["truc@machin.com", "bidule@chose.fr"])
-
+<p/>
 2.3.2. Décaler un événement
 
 En faisant des interviews avec les utilisateurs de l'application, on s'est rendu compte qu'il était fréquent pour eux de décaler un événement à 24 heures plus tard. On veut donc que notre calendrier fasse ça de façon très simple : écris donc une méthode postpone_24h qui décale la start_date d'un évènement au lendemain, même heure.
@@ -69,5 +69,5 @@ Voici ce que permettrait de faire cette méthode dans PRY :
 #On peut ensuite utiliser ce user comme on veut. Par exemple pour afficher son age:
 >puts "Voici l'age du User trouvé : #{user_1.age}"
 
-2.4. Fonctionnalités BONUS
+<h2>2.4. Fonctionnalités BONUS<h2/>
 [Pas faites.]
