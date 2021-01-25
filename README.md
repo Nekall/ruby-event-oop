@@ -12,12 +12,10 @@ Il est possible de récupérer un array contenant tous les utilisateurs déjà c
 <h3>2.3.1. Les attributs de l'événement<h3/>
 <p>
 Voici les attributs (ou variable d'instance) que l'on voudra rajouter à notre événement :
-<br>
     Un événement a une @start_date qui est de type Time (on y reviendra)
     Un événement a une @duration, qui est un integer qui représente le nombre de minutes
     Un événement a un @title, qui est un string
     Un événement a un ou plusieurs @attendees, qui est un array qui contient une liste d’e-mails
-<br>
 L'objectif de tout ça est de pouvoir rapidement (une ligne de code) créer un événement avec truc@machin.com et bidule@chose.fr en tant qu'invités :
 
 Event.new("2019-01-13 09:00", 10, "standup quotidien", ["truc@machin.com", "bidule@chose.fr"])
