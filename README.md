@@ -1,4 +1,4 @@
-<title> Projet : Un calendrier très très PÔÔ </title>
+<h1> Projet : Un calendrier très très PÔÔ <h1/>
 
 <h2>2.2. On s'échauffe avec la classe User<h2/>
 <p>
