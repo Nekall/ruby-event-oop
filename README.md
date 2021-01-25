@@ -17,13 +17,13 @@ L'objectif de tout ça est de pouvoir rapidement (une ligne de code) créer un �
 
 Event.new("2019-01-13 09:00", 10, "standup quotidien", ["truc@machin.com", "bidule@chose.fr"])
 <p/>
-2.3.2. Décaler un événement
+<h3>2.3.2. Décaler un événement<h3/>
 
 En faisant des interviews avec les utilisateurs de l'application, on s'est rendu compte qu'il était fréquent pour eux de décaler un événement à 24 heures plus tard. On veut donc que notre calendrier fasse ça de façon très simple : écris donc une méthode postpone_24h qui décale la start_date d'un évènement au lendemain, même heure.
 
 Ainsi, si j'ai un évènement my_event, en faisant my_event.postpone_24h, je modifie sa @start_date de 24 h. Retourne plus haut voir comment faire ça avec les objets Time
 
-2.3.3. Informations additionnelles sur l'évènement
+<h3>2.3.3. Informations additionnelles sur l'évènement<h3/>
 
 Dans cette section, nous allons coder des méthodes qui te permettront d'obtenir des infos supplémentaires sur ton évènement (pas seulement ses attributs de base). Ainsi on voudrait pouvoir :
 
@@ -32,7 +32,7 @@ Dans cette section, nous allons coder des méthodes qui te permettront d'obtenir
     Savoir si au contraire un événement est dans le futur ;
     Savoir si un événement est bientôt (dans moins de 30 minutes) ;
 
-2.3.4. to_s
+<h3>2.3.4. to_s<h3/>
 
 Maintenant que tu as plein de méthodes pour connaître plein de choses sur tes événements, nous allons coder une méthode pour afficher joliment un événement.
 Pour le moment, si tu crées un my_event = Event.new(.....) et que tu fais puts my_event, ton terminal va afficher l'identifiant de l'objet du genre #<Event:0x00005600b4a9a3c0 @start_date="2019-03-26 12:18:40 +0100", blabla>. Nous on voudrait un affichage propre ressemblant à ça :
@@ -44,7 +44,7 @@ Pour le moment, si tu crées un my_event = Event.new(.....) et que tu fais puts 
 
 Code la méthode to_s qui va afficher les détails de l'évènement, avec des puts, comme ci-dessus si tu fais my_event.to_s
 
-2.3.5. Méthode de classe User
+<h3>2.3.5. Méthode de classe User<h3/>
 
 Dernier exercice : dans la classe des utilisateurs, code une méthode find_by_email qui :
 
